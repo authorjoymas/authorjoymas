@@ -1,0 +1,161 @@
+:root {
+    --text-color: #a2a2ab;
+    --accent-color: #f9d695;
+    --base-color: #30333a;
+
+    --dark-color: rgb(35, 35, 35);
+    --dim-color: #0000004f;
+    --pale-color: #f8edd9;
+
+    --dark-blue-color:#1d1f24;
+    --blue-color:#30333a;
+    --dark-green-color: #1f2420;
+    --green-color: #3b443c;
+    --dark-red-color: #2d221e;
+    --red-color: #4d3b33;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--base-color);
+    color: var(--text-color);
+}
+
+header {
+    background-color: var(--base-color);
+    padding: 10px;
+}
+
+hr {
+    border-color: var(--accent-color);
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.menu li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.menu li:last-child {
+    margin-right: 0; 
+}
+
+.menu a {
+    text-decoration: none;
+    color: var(--text-color); 
+}
+
+.menu li .link-text {
+    padding: 10px 20px;
+    margin-bottom:0px;
+    display: block;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+}
+
+
+
+.menu li .link-text:hover {
+    box-shadow: none;
+}
+
+.menu li .text-translated {
+    margin-top:5px;
+    color: var(--text-color); 
+    font-size: 0.5em;
+    background-color: transparent;
+}
+
+#fiction-link {
+    background-color: var(--dark-red-color);
+}
+
+#fiction-link.active-link {
+    box-shadow: none;
+    background-color: transparent;
+
+}
+
+#fiction-link:hover {
+    background-color: var(--red-color);
+
+}
+
+#world-link {
+    background-color: var(--dark-blue-color);
+}
+
+#world-link.active-link {
+    box-shadow: none;
+    background-color: transparent;
+
+}
+
+#world-link:hover {
+    background-color: var(--blue-color);
+
+}
+
+#about-link {
+    background-color: var(--dark-green-color);
+}
+
+#about-link.active-link {
+    box-shadow: none;
+    background-color: transparent;
+
+}
+
+#about-link:hover {
+    background-color: var(--green-color);
+
+}
+
+
+.two-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left:10px;
+    margin-right:10px;
+    position: relative;
+}
+
+.left-column,
+.right-column {
+    text-align: center;
+    width: 45%;
+    padding: 20px;
+}
+
+.divider {
+    width: 2px;
+    height: 20em;
+    background-color: var(--accent-color);
+}
+
+/* Media query for mobile layout */
+@media (max-width: 768px) {
+    .two-column {
+        flex-direction: column;
+    }
+
+    .divider {
+        display: none; /* Hide the divider on mobile */
+    }
+
+    .left-column,
+    .right-column {
+        width: 90%;
+    }
+}
