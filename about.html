@@ -6,6 +6,7 @@
     <title>Evan Joymas</title>
     <link rel="stylesheet" href="/web/styles/styles.css" />
     <link rel="stylesheet" href="/web/styles/about-styles.css" />
+    <script defer src="/web/framework/email.js"></script>
   </head>
   <body>
     <header>
@@ -23,7 +24,18 @@
       <div class="divider"></div>
       <section class="right-column">
         <h2>Contact</h2>
-        <form action="#" method="POST">
+        <form id="contact-form">
+          <input
+            type="hidden"
+            name="access_key"
+            value="bdf1a6e2-cce6-4da7-8205-bb6c389fcd97"
+          />
+          <input
+            type="hidden"
+            name="subject"
+            value="Query from fiction.evanjoymas.com"
+          />
+          <input type="checkbox" name="botcheck" id="" style="display: none" />
           <div class="form-group">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required />
@@ -37,6 +49,7 @@
             <textarea id="message" name="message" required></textarea>
           </div>
           <button type="submit">Send</button>
+          <div id="result"></div>
         </form>
       </section>
     </main>

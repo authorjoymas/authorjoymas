@@ -43,3 +43,7 @@ button[type="submit"] {
 button[type="submit"]:hover {
     background-color: var(--pale-color);
 }
+
+#result {
+    margin: 5px;
+}
