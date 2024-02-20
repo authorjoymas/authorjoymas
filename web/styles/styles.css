@@ -50,8 +50,15 @@ hr {
 }
 
 .menu a {
+    background-color: transparent;
+    border:none;
     text-decoration: none;
     color: var(--text-color); 
+    box-shadow: none;
+}
+
+.menu a:hover {
+    background-color: transparent;
 }
 
 .menu li .link-text {
@@ -60,6 +67,7 @@ hr {
     display: block;
     transition: background-color 0.3s ease;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 1px;
 
 }
 
@@ -121,6 +129,9 @@ hr {
 
 }
 
+img {
+    width: 90%;
+}
 
 .two-column {
     display: flex;
@@ -159,3 +170,19 @@ hr {
         width: 90%;
     }
 }
+
+a {
+    color: var(--dark-color); /* Default link color */
+    text-decoration: none; /* Remove underline by default */
+    transition: background-color 0.3s ease; /* Smooth color transition on hover */
+    padding:5px;
+    background-color: var(--accent-color);
+    border-radius: 1px;
+    
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+a:hover {
+    background-color: var(--pale-color);
+}
+

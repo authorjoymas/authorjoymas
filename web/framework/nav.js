@@ -1,6 +1,6 @@
-fetch('components/nav.html')
+fetch('/web/components/nav.html')
 .then(res => res.text())
-.then(text => {
+.then(text => { 
     let oldelem = document.querySelector("script#navbar");
     let newelem = document.createElement("nav");
     newelem.innerHTML = text;
