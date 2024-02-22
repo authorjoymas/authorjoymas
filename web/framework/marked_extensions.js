@@ -1,12 +1,6 @@
-
-
-
-// Custom Marked Renderer
-// Custom renderer
 const subtextLink = {
     name: 'subtextLink',
     level: 'inline',
-    //start(src) { return src.match(/^\[.*\]\{.*\}\(.+\)/)?.index; },
     tokenizer(src) {
         const match = /^\[(.*)\]\[(.*)\]\((.*)\)/.exec(src);
         if (match) {
@@ -23,8 +17,8 @@ const subtextLink = {
     },
     renderer(token) {
         return `<a class="subtexted-link" href="${token.url}">
-                    <span class="link-text">(${token.buttonSubText})</span>
-                    <span class="text-translated">${token.buttonText}</span>
+                    <span class="link-text">(${token.buttonText})</span>
+                    <span class="text-translated">${token.buttonSubText}</span>
                 </a>`;
     }
 };
@@ -32,7 +26,6 @@ const subtextLink = {
 const imageLink = {
     name: 'imageLink',
     level: 'inline',
-    //start(src) { return src.match(/^\[.*\]\{.*\}\(.+\)/)?.index; },
     tokenizer(src) {
         const match = /^!\[(.*)\]\((.*)\)\((.*)\)/.exec(src);
         if (match) {
@@ -56,7 +49,6 @@ const imageLink = {
 const sizeableImageLink = {
     name: 'sizeableImageLink',
     level: 'inline',
-    //start(src) { return src.match(/^\[.*\]\{.*\}\(.+\)/)?.index; },
     tokenizer(src) {
         const match = /^!\[(.*)\|([0-9]+)\]\((.*)\)\((.*)\)/.exec(src);
         if (match) {
@@ -81,7 +73,6 @@ const sizeableImageLink = {
 const sizeableImage = {
     name: 'sizeableImage',
     level: 'inline',
-    //start(src) { return src.match(/^\[.*\]\{.*\}\(.+\)/)?.index; },
     tokenizer(src) {
         const match = /^!\[(.*)\|([0-9]+)\]\((.*)\)/.exec(src);
         if (match) {

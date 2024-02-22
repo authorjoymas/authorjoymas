@@ -1,6 +1,4 @@
 
-
-
 // Templates Functions
 function CreateContent(html, numOfCols) {
     let column = document.createElement("section");
@@ -30,11 +28,9 @@ let oldelem = document.querySelector("script#content");
 let newelem = document.createElement("main");
 oldelem.parentNode.replaceChild(newelem,oldelem);
 
-// assuming that its hosting on github or localhost
+// assuming that its hosting on github or localhost,This is github pages specific and would need to be changed if moving to another platform
 let [url, mustParse] = window.location.hostname == "localhost" ? [window.location.origin,true] : ["https://api.github.com/repos/authorjoymas/authorjoymas/contents/", false];
 
-
-// This is github pages specific and would need to be changed if moving to another platform
 fetch(`${url}${contentPath}`).then(res => res.text()).then(text => {
 
     let list;
@@ -52,27 +48,27 @@ fetch(`${url}${contentPath}`).then(res => res.text()).then(text => {
     for (let item of list) {
         let res = await fetch(item);
         let text = await res.text();
-            let contentCols = text.split('---');
-            let numOfCols = contentCols.length;
-            let classCols = numOfCols > 1 ? (numOfCols > 3 ? "multi-column" : "few-column") : "single-column";
-            let article = document.createElement("article");
-            article.classList.add("column", classCols);
-            let isFirst = true;
-            for(content of contentCols) {
+        let contentCols = text.split('---');
+        let numOfCols = contentCols.length;
+        let classCols = numOfCols > 1 ? (numOfCols > 3 ? "multi-column" : "few-column") : "single-column";
+        let article = document.createElement("article");
+        article.classList.add("column", classCols);
+        let isFirst = true;
+        for(content of contentCols) {
 
-                if(!isFirst) {
-                    let div = document.createElement("div");
-                    div.classList.add("divider");
-                    article.appendChild(div);
-                } else {
-                    isFirst = false;
-                }
-
-                let html = marked.parse(content);
-                let column = CreateContent(html, numOfCols);
-                article.appendChild(column);
+            if(!isFirst) {
+                let div = document.createElement("div");
+                div.classList.add("divider");
+                article.appendChild(div);
+            } else {
+                isFirst = false;
             }
-            newelem.appendChild(article);
+
+            let html = marked.parse(content);
+            let column = CreateContent(html, numOfCols);
+            article.appendChild(column);
+        }
+        newelem.appendChild(article);
     }
 })();
 });
