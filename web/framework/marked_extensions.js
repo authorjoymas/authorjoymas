@@ -1,0 +1,103 @@
+
+
+
+// Custom Marked Renderer
+// Custom renderer
+const subtextLink = {
+    name: 'subtextLink',
+    level: 'inline',
+    //start(src) { return src.match(/^\[.*\]\{.*\}\(.+\)/)?.index; },
+    tokenizer(src) {
+        const match = /^\[(.*)\]\[(.*)\]\((.*)\)/.exec(src);
+        if (match) {
+            console.log(match);
+            const [, buttonText, buttonSubText, url] = match;
+            return {
+                type: 'subtextLink',
+                raw: match[0],
+                buttonText: buttonText.trim(),
+                buttonSubText: buttonSubText.trim(),
+                url: url.trim()
+            };
+        }
+    },
+    renderer(token) {
+        return `<a class="subtexted-link" href="${token.url}">
+                    <span class="link-text">(${token.buttonSubText})</span>
+                    <span class="text-translated">${token.buttonText}</span>
+                </a>`;
+    }
+};
+
+const imageLink = {
+    name: 'imageLink',
+    level: 'inline',
+    //start(src) { return src.match(/^\[.*\]\{.*\}\(.+\)/)?.index; },
+    tokenizer(src) {
+        const match = /^!\[(.*)\]\((.*)\)\((.*)\)/.exec(src);
+        if (match) {
+            const [, imageAltText, url, imageUrl] = match;
+            return {
+                type: 'imageLink',
+                raw: match[0],
+                imageAltText: imageAltText.trim(),
+                imageUrl: imageUrl.trim(),
+                url: url.trim()
+            };
+        }
+    },
+    renderer(token) {
+        return `<a class="image-link" href="${token.url}">
+                    <img alt="${token.imageAltText}" src="${token.imageUrl}">
+                </a>`;
+    }
+};
+
+const sizeableImageLink = {
+    name: 'sizeableImageLink',
+    level: 'inline',
+    //start(src) { return src.match(/^\[.*\]\{.*\}\(.+\)/)?.index; },
+    tokenizer(src) {
+        const match = /^!\[(.*)\|([0-9]+)\]\((.*)\)\((.*)\)/.exec(src);
+        if (match) {
+            const [, imageAltText, size, url, imageUrl] = match;
+            return {
+                type: 'sizeableImageLink',
+                raw: match[0],
+                imageAltText: imageAltText.trim(),
+                imageUrl: imageUrl.trim(),
+                size: size.trim() + "px",
+                url: url.trim()
+            };
+        }
+    },
+    renderer(token) {
+        return `<a class="image-link" href="${token.url}">
+                    <img alt="${token.imageAltText}" src="${token.imageUrl}" style="width: ${token.size}">
+                </a>`;
+    }
+};
+
+const sizeableImage = {
+    name: 'sizeableImage',
+    level: 'inline',
+    //start(src) { return src.match(/^\[.*\]\{.*\}\(.+\)/)?.index; },
+    tokenizer(src) {
+        const match = /^!\[(.*)\|([0-9]+)\]\((.*)\)/.exec(src);
+        if (match) {
+            const [, imageAltText, size, imageUrl] = match;
+            return {
+                type: 'sizeableImage',
+                raw: match[0],
+                imageAltText: imageAltText.trim(),
+                imageUrl: imageUrl.trim(),
+                size: size.trim() + "px",
+            };
+        }
+    },
+    renderer(token) {
+        return `<img alt="${token.imageAltText}" src="${token.imageUrl}" style="width: ${token.size}">`;
+    }
+};
+
+marked.use({ extensions: [subtextLink, imageLink, sizeableImage, sizeableImageLink] });

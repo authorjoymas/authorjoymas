@@ -6,4 +6,12 @@ More Text Stuff Even More Yay
 
 ---
 
- Another Text What???
+[A Cool Button][With Subtext](/fiction.html)
+
+ ---
+
+ More
+
+ ---
+
+ MORE !!!!

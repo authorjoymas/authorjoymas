@@ -1,6 +1,6 @@
 ## More Content
 
-Hellow there!
+![Image Link|100](/index.html)(/content/media/Claimer.png)
 
 ---
 
