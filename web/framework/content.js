@@ -29,10 +29,15 @@ let newelem = document.createElement("main");
 oldelem.parentNode.replaceChild(newelem,oldelem);
 
 // assuming that its hosting on github or localhost,This is github pages specific and would need to be changed if moving to another platform
-let [url, mustParse] = window.location.hostname == "localhost" ? [window.location.origin,true] : ["https://api.github.com/repos/authorjoymas/authorjoymas/contents/", false];
+let [url, mustParse] = window.location.hostname == "localhost" || "127.0.0.1" ? [window.location.origin,true] : ["https://api.github.com/repos/authorjoymas/authorjoymas/contents/", false];
 
-fetch(`${url}${contentPath}`).then(res => res.text()).then(text => {
-
+fetch(`${url}${contentPath}`).then(res => {
+    if( res.status != 200) {
+        return Promise.reject(res.status);
+    }
+    return  res.text();
+   
+}).then(text => {
     let list;
     if(mustParse) {
         list = parseDirectoryListing(text, contentPath);
@@ -71,7 +76,7 @@ fetch(`${url}${contentPath}`).then(res => res.text()).then(text => {
         newelem.appendChild(article);
     }
 })();
-});
+}, error => console.log(`Content Could not be retrieved, server responded with ${error}`));
 
 
 
