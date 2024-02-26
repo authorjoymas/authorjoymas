@@ -1,0 +1,3 @@
+world: #30333a
+about: #3b443c
+fiction: #4d3b33

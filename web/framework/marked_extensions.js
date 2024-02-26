@@ -4,7 +4,6 @@ const subtextLink = {
     tokenizer(src) {
         const match = /^\[(.*)\]\[(.*)\]\((.*)\)/.exec(src);
         if (match) {
-            console.log(match);
             const [, buttonText, buttonSubText, url] = match;
             return {
                 type: 'subtextLink',
