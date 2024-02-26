@@ -13,7 +13,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: var(--base-color);
+    background: var(--base-color);
     color: var(--text-color);
 }
 
@@ -84,7 +84,7 @@ a:hover {
 
 /* Menu Style */
 header {
-    background-color: var(--base-color);
+    background-color: transparent;
     padding-bottom: 10px;
 }
 
@@ -132,6 +132,7 @@ header {
 }
 
 .menu li .link-text.active-link {
+    background: transparent;
     box-shadow:none;
 }
 

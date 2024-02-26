@@ -20,10 +20,12 @@ fetch('/web/components/nav.html')
         let a = document.getElementsByTagName('a');
         for (let idx= 0; idx < a.length; ++idx){
             let name = a[idx].firstChild.id;
-            a[idx].firstChild.style.backgroundColor = colors[name];
+            
             if (a[idx].href == window.location.href) {
                 a[idx].firstChild.classList.add('active-link');
                 document.querySelector(":root").style.setProperty('--base-color', colors[name] );
+            } else {
+                a[idx].firstChild.style.background = colors[name];
             }
             
         }

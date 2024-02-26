@@ -20,6 +20,8 @@
 1. Open the file content/color.txt
 2. On a new line type the id you previously set followed by a colon and the hexadecimal value of the colour (remember the hash) e.g. 'name: #12ab43'
 
+> You can actually to a bunch of other background stuff such as images, gradients etc, the bit after the colon just needs any valid set of css background values. Look here [MDN DOCs](https://developer.mozilla.org/en-US/docs/Web/CSS/background)
+
 ## Adding Content
 
 1. In the content folder make the subfolder specified by 'contentPath' from the first Step. e.g. make folder '/content/name/'
