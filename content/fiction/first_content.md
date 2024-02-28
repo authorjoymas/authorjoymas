@@ -12,4 +12,4 @@ Button
 
 ### A Sub Heading
 
-![image|20](/content/media/archmap.png)
+![image|700](/content/media/archmap.png)
