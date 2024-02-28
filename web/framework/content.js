@@ -55,12 +55,11 @@ if(text != undefined) {
     }
   
     list = list.filter(file => { return file.split(".")[file.split(".").length-1] == "md"});
-    sessionStorage.setItem(contentPath, list);
+    sessionStorage.setItem(contentPath, JSON.stringify(list));
 } else {
-    list = sessionStorage.getItem(contentPath);
+    list = JSON.parse(sessionStorage.getItem(contentPath));
 }
 
-console.log(list);
 if(list != undefined) {
     for (let item of list) {
         let res = await fetch(item);
