@@ -1,6 +1,6 @@
 ## More Content
 
-![Image Link|100](/index.html)(/content/media/Claimer.png)
+![Image Link|20](/index.html)(/content/media/Claimer.png)
 
 ---
 

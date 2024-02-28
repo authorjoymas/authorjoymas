@@ -68,7 +68,7 @@ a:hover {
 .subtexted-link .text-translated {
     margin-top:5px;
     color: var(--text-color); 
-    font-size: 0.5em;
+    font-size: 0.8em;
     background-color: transparent;
     
 }
@@ -150,7 +150,7 @@ header {
 
 
 /* Markdown Container Styles */
-.column {
+.row {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -160,7 +160,8 @@ header {
     position: relative;
 }
 
-.row {
+.column {
+    position: relative;
     text-align: center;
     width: 45%;
     padding: 20px;
@@ -174,29 +175,29 @@ header {
 }
 
 @media (max-width: 768px) {
-    .column.few-column{
+    .row.few-row{
         flex-direction: column;
     }
 
-    .few-column .divider {
+    .few-row .divider {
         display: none; /* Hide the divider on mobile */
     }
 
-    .few-column .row {
+    .few-row .column {
         width: 90%;
     }
 }
 
 @media (max-width: 968px) {
-    .column.multi-column{
+    .row.multi-row{
         flex-direction: column;
     }
 
-    .multi-column .divider {
+    .multi-row .divider {
         display: none; /* Hide the divider on mobile */
     }
 
-    .multi-column .row {
+    .multi-row .column {
         width: 90%;
     }
 }
