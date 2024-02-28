@@ -3,8 +3,7 @@
 function CreateContent(html, numOfCols) {
     let column = document.createElement("section");
     let width = 100 / numOfCols - 5;
-    column.classList.add("row");
-    column.style.width = `${width}%`;
+    column.classList.add("column");
     column.innerHTML = html;
     return column;
 }
@@ -66,9 +65,9 @@ if(list != undefined) {
         let text = await res.text();
         let contentCols = text.split('---');
         let numOfCols = contentCols.length;
-        let classCols = numOfCols > 1 ? (numOfCols > 3 ? "multi-column" : "few-column") : "single-column";
+        let classCols = numOfCols > 1 ? (numOfCols > 3 ? "multi-row" : "few-row") : "single-row";
         let article = document.createElement("article");
-        article.classList.add("column", classCols);
+        article.classList.add("row", classCols);
         let isFirst = true;
         for(content of contentCols) {
 
