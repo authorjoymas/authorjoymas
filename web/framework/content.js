@@ -29,7 +29,7 @@ let newelem = document.createElement("main");
 oldelem.parentNode.replaceChild(newelem,oldelem);
 
 // assuming that its hosting on github or localhost,This is github pages specific and would need to be changed if moving to another platform
-let [url, mustParse] = (window.location.hostname == "localhost" || window.location.hostname == "") ? [window.location.origin,true] : ["https://api.github.com/repos/authorjoymas/authorjoymas/contents/", false];
+let [url, mustParse] = (window.location.hostname == "localhost" || window.location.hostname == "127.0.0.1") ? [window.location.origin,true] : ["https://api.github.com/repos/authorjoymas/authorjoymas/contents/", false];
 
 fetch(`${url}${contentPath}`).then(res => {
     if( res.status != 200) {
