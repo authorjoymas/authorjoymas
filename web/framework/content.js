@@ -29,16 +29,20 @@ let newelem = document.createElement("main");
 oldelem.parentNode.replaceChild(newelem,oldelem);
 
 // assuming that its hosting on github or localhost,This is github pages specific and would need to be changed if moving to another platform
-let [url, mustParse] = (window.location.hostname == "localhost" || window.location.hostname == "127.0.0.1") ? [window.location.origin,true] : ["https://api.github.com/repos/authorjoymas/authorjoymas/contents/", false];
+let [url, mustParse, devMode] = (window.location.hostname == "localhost" || window.location.hostname == "127.0.0.1") ? [window.location.origin,true, true] : ["https://api.github.com/repos/authorjoymas/authorjoymas/contents/", false, false];
 
-fetch(`${url}${contentPath}`).then(res => {
-    if( res.status != 200) {
-        return Promise.reject(res.status);
+(async () => {
+    let text = undefined;
+    if(devMode || sessionStorage.getItem(contentPath) == undefined) {
+        let response = await fetch(`${url}${contentPath}`);
+        if(response.status == 200) {
+        text = await response.text();
+        }
     }
-    return  res.text();
-   
-}).then(text => {
-    let list;
+
+let list;
+if(text != undefined) {
+    
     if(mustParse) {
         list = parseDirectoryListing(text, contentPath);
     }else {
@@ -47,11 +51,17 @@ fetch(`${url}${contentPath}`).then(res => {
         {
             manifest = [manifest];
         }
-        manifest = manifest.filter(file => { return file.name.split(".")[1] == "md"});
         list = manifest.map(item => `/${item.path}`);
     }
+  
+    list = list.filter(file => { return file.split(".")[file.split(".").length-1] == "md"});
+    sessionStorage.setItem(contentPath, list);
+} else {
+    list = sessionStorage.getItem(contentPath);
+}
 
-    (async () => {
+console.log(list);
+if(list != undefined) {
     for (let item of list) {
         let res = await fetch(item);
         let text = await res.text();
@@ -77,8 +87,9 @@ fetch(`${url}${contentPath}`).then(res => {
         }
         newelem.appendChild(article);
     }
+}
 })();
-}, error => console.log(`Content Could not be retrieved, server responded with ${error}`));
+
 
 
 
