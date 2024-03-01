@@ -10,5 +10,5 @@ Evan has a PhD in political science and teaches in political science, political 
 
 For any enquiries please email:
 
-fiction@evanjoymas.com
+<fiction@evanjoymas.com>
 

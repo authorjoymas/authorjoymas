@@ -57,7 +57,7 @@ const sizeableImageLink = {
                 raw: match[0],
                 imageAltText: imageAltText.trim(),
                 imageUrl: imageUrl.trim(),
-                size: size.trim() + "px",
+                size: size.trim() + "%",
                 url: url.trim()
             };
         }
@@ -81,7 +81,7 @@ const sizeableImage = {
                 raw: match[0],
                 imageAltText: imageAltText.trim(),
                 imageUrl: imageUrl.trim(),
-                size: size.trim() + "px",
+                size: size.trim() + "%",
             };
         }
     },
