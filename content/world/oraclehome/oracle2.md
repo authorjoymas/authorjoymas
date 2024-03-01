@@ -5,7 +5,7 @@
 <span style='color: #5D8C98;'> _tea brings saltwater without heart or blossom_</span>
 
 
-"Rest will cause injury, regardless of whether you focus on yourself or your goal."
+“Rest will cause injury, regardless of whether you focus on yourself or your goal.”
 
 ---
 
