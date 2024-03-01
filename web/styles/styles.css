@@ -12,9 +12,28 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: Centaur, Garamond, Cambria, serif;
     background: var(--base-color);
     color: var(--text-color);
+}
+
+h1 {
+    font-size: 3em;
+    color: #F9D695;
+}
+
+h2 {
+    font-size: 2.5em;
+    color: #F9D695;
+}
+
+h3 {
+    font-size: 2em;
+    color: #5D8C98;
+}
+
+p {
+    font-size: 1.5em;
 }
 
 img {
@@ -27,11 +46,11 @@ hr {
 
 /* Link Styles */
 a {
-    color: var(--dark-color); /* Default link color */
+    color: var(--accent-color); /* Default link color */
     text-decoration: none; /* Remove underline by default */
     transition: background-color 0.3s ease; /* Smooth color transition on hover */
     padding:5px;
-    background-color: var(--accent-color);
+    background-color: none;
     border-radius: 1px;
     
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -168,7 +187,7 @@ header {
 
 .divider {
     width: 2px;
-    height: 20em;
+    height: 5em;
     margin-top:5em;
     background-color: var(--accent-color);
 }

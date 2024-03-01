@@ -1,14 +1,14 @@
-# About the author
+## About
 
-Evan Joymas is amazing
+Evan Joymas is based in Melbourne, Australia.  He is fascinated with stories, games and things that are not real.  For the last several years he has been working towards a debut novel and the world that it is set in.
+
+Evan has a PhD in political science and teaches in political science, political theory and international relations.
 
 ---
 
 ## Contact details
 
-
-Contact me you _filthy_ pigs
+For any enquiries please email:
 
 fiction@evanjoymas.com
 
-![A map](/content/media/Claimer.png)
