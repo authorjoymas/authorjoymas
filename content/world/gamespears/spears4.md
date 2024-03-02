@@ -10,4 +10,4 @@ If playing with the river, a lunge is the only way to cross the river.
 
 ---
 
-![Lunge|400](/content/media/world/games/lunge.png)
+![Lunge|50](/content/media/world/games/lunge.png)

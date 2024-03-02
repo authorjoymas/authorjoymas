@@ -5,6 +5,6 @@ To make a reading you must identify four river bends and read them one by one.  
 In this example, the salt stone, one ichor stone and two embers stones are inside the bend.
 ---
 
-![Method Step 2|600](/content/media/world/oracle/methodstep2.png)
+![Method Step 2|70](/content/media/world/oracle/methodstep2.png)
 
 _The first bend_

@@ -1,5 +1,5 @@
 
-![Town Pink|500](/content/media/rpg/townpink.png)
+![Town Pink|60](/content/media/rpg/townpink.png)
 
 ---
 

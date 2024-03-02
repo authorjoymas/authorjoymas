@@ -6,4 +6,4 @@ A standard board now is organised in a manner that allows for all the basic boar
 
 ---
 
-![The Board|600](/content/media/world/games/board.png)
+![The Board|80](/content/media/world/games/board.png)

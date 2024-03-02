@@ -6,4 +6,4 @@ The Grand Minister is moved first if a piece jumps over her, or if a piece moves
 
 ---
 
-![Grand Minister|600](/content/media/world/games/grandminister.png)
+![Grand Minister|60](/content/media/world/games/grandminister.png)

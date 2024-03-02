@@ -2,6 +2,6 @@ Many kopheri games share a set of basic principles that characterise the philoso
 
 ---
 
-![Filler Pic|400](/content/media/world/games/balancedboard.png)
+![Filler Pic|60](/content/media/world/games/balancedboard.png)
 
 _A balanced board_

@@ -6,7 +6,7 @@ Players can keep track of balance by placing one or two spare tiles at the edge 
 
 ---
 
-![Filler Pic|400](/content/media/world/games/fillergamepic.png)
+![Filler Pic|60](/content/media/world/games/fillergamepic.png)
 
 _An unbalanced board_
 

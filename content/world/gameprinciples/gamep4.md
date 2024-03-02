@@ -4,7 +4,7 @@ If a game includes the principle of dispersion, it simply means that <span style
 
 ---
 
-![Dispersion|400](/content/media/world/games/disperse.png)
+![Dispersion|60](/content/media/world/games/disperse.png)
 
 
 _Legal and illegal placement for the green tile._

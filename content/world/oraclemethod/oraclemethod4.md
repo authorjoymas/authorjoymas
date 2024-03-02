@@ -6,6 +6,6 @@ In the example tableau, the salt stone, ichor stone and two ember stones indicat
 
 ---
 
-![Method Step 3|600](/content/media/world/oracle/methodstep3.png)
+![Method Step 3](/content/media/world/oracle/methodstep3.png)
 
 _Possible readings_

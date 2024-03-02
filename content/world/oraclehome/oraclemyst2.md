@@ -7,7 +7,7 @@ Not all students of the oracle agree - Helet-Helet says that the stones <span st
 ---
 
 
-![Example Oracle|600](/content/media/world/oracle/orexample2.png)
+![Example Oracle|70](/content/media/world/oracle/orexample2.png)
 
 <span style='color: #5D8C98;'> _stone without grain, with grain with blossom_</span>
 

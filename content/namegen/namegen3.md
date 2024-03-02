@@ -14,4 +14,4 @@ In the blue cell to the left of each phoneme you should put the frequency of the
 
 ---
 
-![Inventory|500](/content/media/namegen/Inventory.png)
+![Inventory|80](/content/media/namegen/Inventory.png)

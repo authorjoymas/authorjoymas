@@ -6,4 +6,4 @@ Tiles in each of the five ‘ordinary’ sets come in three variations: ten ordi
 
 ---
 
-![Tiles|500](/content/media/world/games/tiles.png)
+![Tiles|70](/content/media/world/games/tiles.png)

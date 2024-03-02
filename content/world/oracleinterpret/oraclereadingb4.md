@@ -1,6 +1,6 @@
 
 
-![Example Oracle|600](/content/media/world/oracle/orexample3.png)
+![Example Oracle|70](/content/media/world/oracle/orexample3.png)
 
 <span style='color: #5D8C98;'> _dust without festival, without dust without tea_</span>
 

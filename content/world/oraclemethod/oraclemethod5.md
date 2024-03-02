@@ -7,6 +7,6 @@ There are four possible outcomes, each indicating a different path.  In the exam
 
 ---
 
-![Method Step 4|600](/content/media/world/oracle/methodstep4.png)
+![Method Step 4|80](/content/media/world/oracle/methodstep4.png)
 
 _Possible paths_

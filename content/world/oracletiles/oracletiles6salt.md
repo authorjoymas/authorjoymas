@@ -4,4 +4,4 @@ This is a single white or pale stone, and suggests difficulty.  If using game ti
 
 ---
 
-![Salt Tiles|140](/content/media/world/oracle/salttile.png)
+![Salt Tiles|18](/content/media/world/oracle/salttile.png)

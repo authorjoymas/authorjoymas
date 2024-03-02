@@ -12,5 +12,5 @@ Underneath this is another input box and another set of output boxes.  This inpu
 
 ---
 
-![Input Sheet|700](/content/media/namegen/InputSheet.png)
+![Input Sheet|80](/content/media/namegen/InputSheet.png)
 

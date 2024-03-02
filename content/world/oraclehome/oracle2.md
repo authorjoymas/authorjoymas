@@ -1,6 +1,6 @@
 
 
-![Example Oracle|600](/content/media/world/oracle/orexample1.png)
+![Example Oracle|70](/content/media/world/oracle/orexample1.png)
 
 <span style='color: #5D8C98;'> _tea brings saltwater without heart or blossom_</span>
 

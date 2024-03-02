@@ -1,5 +1,5 @@
 
-![Example Oracle|600](/content/media/world/oracle/orexample4.png)
+![Example Oracle|70](/content/media/world/oracle/orexample4.png)
 
 <span style='color: #5D8C98;'> _river or dust, or stillness with festival_</span>
 

@@ -8,4 +8,4 @@ If players are playing the traditional version, they complete setup by [building
 
 ---
 
-![Spears Set up|700](/content/media/world/games/spearssetup.png)
+![Spears Set up|90](/content/media/world/games/spearssetup.png)

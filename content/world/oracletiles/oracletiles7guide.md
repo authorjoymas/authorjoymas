@@ -4,4 +4,4 @@ This is a single dark-coloured stone, and shows how the different parts of the r
 
 ---
 
-![Guide Tiles|140](/content/media/world/oracle/guidetile.png)
+![Guide Tiles|18](/content/media/world/oracle/guidetile.png)

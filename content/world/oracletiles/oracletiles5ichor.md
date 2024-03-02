@@ -4,4 +4,4 @@ These are two identical clear, green or tan stones, often glass beads.  They sug
 
 ---
 
-![Ichor Tiles|280](/content/media/world/oracle/ichortiles.png)
+![Ichor Tiles|35](/content/media/world/oracle/ichortiles.png)

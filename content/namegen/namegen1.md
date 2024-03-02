@@ -1,7 +1,5 @@
 [Fantasy Name Generator](/content/media/DictionaryGenerator.xlsx)
 
----
-
 ### What is this?
 
 This is an excel spreadsheet that I have hacked together as a personal tool to help me generate words for a constructed language.
@@ -9,6 +7,9 @@ This is an excel spreadsheet that I have hacked together as a personal tool to h
 The sheet takes any word (or any string of letters) as input, and spits out three options for a _conword_, a constructed language word.  The sheet allows you to choose the phonotactics of the words, as well as various sound changes for up to five languages, so that your words will hopefully sound like you want them to, and as if they all come from the same language.
 
 Rather than randomly generating words each time the sheet it used, it uses the input word as a seed.  This means that putting in the same input word will always produce the same output conword.  For example, each time you input _fire_ the sheet will spit out the same conword.  In this sense, I think it acts a little like a dictionary - you can always go back and check what word-suggestions it gave you for your input, without you having to remember and record each individual word that is has generated.
+---
+
+
 
 ### Why use it?
 

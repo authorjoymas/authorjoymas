@@ -4,7 +4,7 @@
 
 
 
-![Dispersion|300](/content/media/world/games/disperse.png)
+![Dispersion|60](/content/media/world/games/disperse.png)
 
 
 ---
@@ -17,7 +17,7 @@ In kopheri, two tiles of the same colour <span style='color: #d7d5dfff;'>cannot 
 
 
 
-![Facing|300](/content/media/world/games/facing.png)
+![Facing|60](/content/media/world/games/facing.png)
 
 ---
 
@@ -28,4 +28,4 @@ In kopheri, two tiles of the same colour <span style='color: #d7d5dfff;'>cannot 
 Players can keep track of balance by placing one or two spare tiles at the edge of a half to indicate if it has one or two more tiles than the other half.
 
 
-![Filler Pic|300](/content/media/world/games/fillergamepic.png)
+![Filler Pic|60](/content/media/world/games/fillergamepic.png)

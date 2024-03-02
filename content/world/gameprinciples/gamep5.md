@@ -6,7 +6,7 @@ Many games require that two tiles of the same colour <span style='color: #d7d5df
 
 ---
 
-![Facing|400](/content/media/world/games/facing.png)
+![Facing|60](/content/media/world/games/facing.png)
 
 _The green tile cannot be placed on the left because it is facing the right tile._
 

@@ -9,6 +9,6 @@ The river typically splits the board into two parts, and often the principle of 
 ---
 
 
-![Building the River|600](/content/media/world/games/buildtheriver.png)
+![Building the River|80](/content/media/world/games/buildtheriver.png)
 
 

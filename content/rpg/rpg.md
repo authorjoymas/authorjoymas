@@ -4,4 +4,4 @@ In _All the Rivers and Mountains_ players role-play as factions who engage in ad
 
 ---
 
-![TownGold|500](/content/media/rpg/towngold.png)
+![TownGold|60](/content/media/rpg/towngold.png)

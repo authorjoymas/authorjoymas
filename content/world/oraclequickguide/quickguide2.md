@@ -1,1 +1,1 @@
-![Quick Guide|1200](/content/media/world/oracle/quickguide.png)
+![Quick Guide](/content/media/world/oracle/quickguide.png)

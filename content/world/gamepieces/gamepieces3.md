@@ -6,4 +6,4 @@ Many games use the river tiles in a distinct manner, though the importance of th
 
 ---
 
-![River Tiles|320](/content/media/world/games/rivertiles.png)
+![River Tiles|50](/content/media/world/games/rivertiles.png)

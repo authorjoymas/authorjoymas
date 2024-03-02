@@ -8,5 +8,5 @@ You can now move on to [interpret the reading](/oracleinterpret.html).
 
 ---
 
-![Method Step 1|600](/content/media/world/oracle/methodstep1.png)
+![Method Step 1|70](/content/media/world/oracle/methodstep1.png)
 

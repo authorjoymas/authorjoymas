@@ -2,4 +2,4 @@ The game of _All the Rivers and Moutains_ is designed to allow players to easily
 
 ---
 
-![Town Green|500](/content/media/rpg/towngreen.png)
+![Town Green|60](/content/media/rpg/towngreen.png)

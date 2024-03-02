@@ -2,7 +2,7 @@
 
 A road is any orthogonal or diagonal run of <span style='color: #d7d5dfff;'>exactly three tiles</span>.
 
-![Roads|300](/content/media/world/games/roads.png)
+![Roads|75](/content/media/world/games/roads.png)
 
 ---
 
@@ -10,7 +10,7 @@ A road is any orthogonal or diagonal run of <span style='color: #d7d5dfff;'>exac
 
 A triangle is a pattern made of <span style='color: #d7d5dfff;'>two lines of the same length joined at a single tile</span>.
 
-![triangles|300](/content/media/world/games/triangles.png)
+![triangles|75](/content/media/world/games/triangles.png)
 
 ---
 
@@ -18,7 +18,7 @@ A triangle is a pattern made of <span style='color: #d7d5dfff;'>two lines of the
 
 A box is made up of four tiles at the corners of a rectangle.
 
-![Boxes|300](/content/media/world/games/boxes.png)
+![Boxes|75](/content/media/world/games/boxes.png)
 
 ---
 
@@ -26,4 +26,4 @@ A box is made up of four tiles at the corners of a rectangle.
 
 A cross is made of two lines that intersect in the exact middle.
 
-![Crosses|300](/content/media/world/games/crosses.png)
+![Crosses|75](/content/media/world/games/crosses.png)

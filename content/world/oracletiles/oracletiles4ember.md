@@ -4,4 +4,4 @@ These are three identical ember-coloured stones, often made from resin.  They of
 
 ---
 
-![Ember Tiles|420](/content/media/world/oracle/embertiles.png)
+![Ember Tiles|50](/content/media/world/oracle/embertiles.png)

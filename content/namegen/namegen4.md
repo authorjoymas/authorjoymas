@@ -16,5 +16,5 @@ Of course, you can keep it simple.
 
 ---
 
-![Sound Changes|500](/content/media/namegen/SoundChange.png)
+![Sound Changes|70](/content/media/namegen/SoundChange.png)
 

@@ -6,7 +6,7 @@ First, take all thirteen tiles in your cupped hands and conceal them.  Ask the o
 
 ---
 
-![Method Step 1|600](/content/media/world/oracle/methodstep1.png)
+![Method Step 1|70](/content/media/world/oracle/methodstep1.png)
 
 _The throw_
 
