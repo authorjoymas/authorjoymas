@@ -1,0 +1,7 @@
+In _All the Rivers and Mountains_ a unit is a group of any size that the player can control.  A unit could consist of a single person, a small sortie, a large army, or an entire city.  The game is designed to allow players to move from large-scale to small-scale scenarios easily and quickly.  Players might control a large variety of differing units in a single session, including detaching smaller units from bigger units in order to engage in more specific scenarios, such as sending out a small squad from a larger army.  All units in the game are handled relatively similarly, so that players don't have to learn new mechanics for units of different sizes.  Units are also designed to be easy and quick to create, so that players feel free to make new units as the game progresses.
+
+Every unit has the following properties: a name, an Integrity score, a size, a motivation, a weakness, and a list of 6 characteristics.  To keep track of each unit, players can write each unit's properties on an index card.  As new units arrive players can add index cards, and when units fall out of use the player can put those index cards to the side.
+
+---
+
+![Green Archer|40](/content/media/rpg/greenarcher.png)
