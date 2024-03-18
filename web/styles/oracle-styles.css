@@ -1,0 +1,51 @@
+
+
+article {
+    justify-content: center;
+}
+
+button {
+    color: var(--accent-color); /* Default link color */
+    transition: background-color 0.3s ease; /* Smooth color transition on hover */
+    padding:5px;
+    font-size: 2em;
+    background-color: transparent;
+    font-family: Garamond, Cambria, serif;
+    border-radius: 1px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background-color: var(--pale-color);
+}
+
+.oracle-controls {
+    justify-content: center;
+    width: 0.5vw;
+    display: inline;
+    float: left;
+    margin-left:1em;
+    padding:0.5em;
+}
+
+  .oracle-scene {
+    width:fit-content;
+    margin-right: 10em;
+    margin-left:1em;
+    border: 5px #4d3b33 solid;
+    float:right;
+    justify-content: center;
+    background: url(/web/styles/sand.png); 
+  }
+
+  @media (max-width: 968px) {
+    .oracle-scene {
+        margin-right: 5em;
+    }
+  }
+
+  @media (max-width: 728px) {
+    .oracle-scene {
+        margin-right: 0px;
+    }
+  }

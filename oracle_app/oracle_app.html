@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Evan Joymas</title>
+    <link rel="stylesheet" href="/web/styles/styles.css" />
+    <link rel="stylesheet" href="/web/styles/oracle-styles.css" />
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@v0.162.0/build/three.module.js",
+          "three/addons/": "https://unpkg.com/three@v0.162.0/examples/jsm/",
+          "cannon-es": "https://cdn.jsdelivr.net/npm/cannon-es@0.20.0/dist/cannon-es.min.js",
+          "cannon-es-debugger": "https://cdn.jsdelivr.net/npm/cannon-es-debugger@1.0.0/dist/cannon-es-debugger.min.js"
+        }
+      }
+    </script>
+    <script type="module" src="./oracle.js"></script>
+  </head>
+  <body>
+    <header>
+      <script id="navbar" src="/web/framework/nav.js"></script>
+    </header>
+    <article>
+      <section class="oracle-scene">
+        <canvas id="canvas"></canvas>
+      </section>
+      <section class="oracle-controls">
+        <div id="score-result"></div>
+        <button id="roll-btn">Throw Stones</button>
+      </section>
+    </article>
+  </body>
+</html>
