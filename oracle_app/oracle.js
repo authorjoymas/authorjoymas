@@ -7,7 +7,7 @@ import * as BufferGeometryUtils from 'three/addons/utils/BufferGeometryUtils.js'
 const canvasEl = document.querySelector('#canvas');
 
 // Parameters ///////////////////////////////////////////////////////////////////////////////////////////////
-let debug = false;
+let debug = true;
 let renderer, scene, camera, physicsWorld, cannonDebugger;
 let throwStrength = 2;
 const objectParams = {
@@ -160,7 +160,7 @@ function createEnvironment() {
     const floor = new THREE.Mesh(
         new THREE.PlaneGeometry(1000, 1000),
         new THREE.ShadowMaterial({
-            color: 0xffffff,
+            color: 0x00000,
             opacity: .1
         })
     )
