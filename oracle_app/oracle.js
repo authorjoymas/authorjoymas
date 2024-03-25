@@ -82,7 +82,10 @@ window.addEventListener('touchstart', (e) => {
     startPos = [e.touches[0].clientX, e.touches[0].clientY];
     liftStones();});
 window.addEventListener('mouseup', (e) => {
-    window.removeEventListener('mousemove'); 
+    window.removeEventListener('mousemove', (event) => {
+        endPos = [event.pageX, event.pageY];
+        wigglePositions();
+    }); 
    
     throwStones();});
 window.addEventListener('touchend', (e) => {
