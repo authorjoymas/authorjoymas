@@ -1,19 +1,18 @@
 import * as CANNON from 'cannon-es';
 import CannonDebugger from 'cannon-es-debugger'
 
-import * as THREE from 'three';
+import * as THREE from 'three'; 
 import * as BufferGeometryUtils from 'three/addons/utils/BufferGeometryUtils.js';
 
 const canvasEl = document.querySelector('#canvas');
-const scoreResult = document.querySelector('#score-result');
-const rollBtn = document.querySelector('#roll-btn');
 
 // Parameters ///////////////////////////////////////////////////////////////////////////////////////////////
 let debug = false;
 let renderer, scene, camera, physicsWorld, cannonDebugger;
+let throwStrength = 2;
 const objectParams = {
     segments: 40,
-    edgeRadius: 0.2,
+    edgeRadius: 0.142,
 };
 
 const StoneType = Object.freeze({
@@ -32,45 +31,64 @@ let finishedStones;
 const Stones = [StoneType.WellSpring, StoneType.Bend1, StoneType.Bend2, StoneType.Bend3, StoneType.Bend4, StoneType.Mouth, StoneType.Ember, StoneType.Ember,StoneType.Ember, StoneType.Ichor, StoneType.Ichor,StoneType.Salt, StoneType.Guide];
 const stoneArray = [];
 
-function getStoneColor(stoneType) {
+function getStoneTexture(stoneType) {
+    const textureLoader = new THREE.TextureLoader();
     switch(stoneType) {
         case StoneType.WellSpring:
-            return 0x2f2bff;
+            return textureLoader.load('./textures/wellspring.png');
         case StoneType.Bend1:
-            return 0x2b52ff;
+            return textureLoader.load('./textures/bend1.png');
         case StoneType.Bend2:
-            return 0x2b75ff;
+            return textureLoader.load('./textures/bend2.png');
         case StoneType.Bend3:
-            return 0x2b92ff;
+            return textureLoader.load('./textures/bend3.png');
         case StoneType.Bend4:
-            return 0x2bb5ff;
+            return textureLoader.load('./textures/bend4.png');
         case StoneType.Mouth:
-            return 0x2bd8ff; 
+            return textureLoader.load('./textures/rivermouth.png'); 
         case StoneType.Ember:
-            return 0xbf541f;
+            return textureLoader.load('./textures/ember.png');
         case StoneType.Ichor:
-            return 0x1a6e1a;
+            return textureLoader.load('./textures/ichor.png');
         case StoneType.Salt:
-            return 0xa3911c;
+            return textureLoader.load('./textures/salt.png');
         case StoneType.Guide:
-            return 0x21211e;
+            return textureLoader.load('./textures/guide.png');
         default:
-            return 0xffffff;
+            throw new Error("stoneType does not exist");
     }
 }
 
-
-
 // Initialisation////////////////////////////////////////////////////////////////////////////////////////
+let startPos = [0,0]
+let endPos = [0,0];
 initPhysics();
 initScene();
 if(debug) initDebugger();
 throwStones();
 render();
 
+
 window.addEventListener('resize', updateSceneSize);
-window.addEventListener('dblclick', throwStones);
-rollBtn.addEventListener('click', throwStones);
+window.addEventListener('mousedown', (e) => {
+    window.addEventListener('mousemove',liftStones); 
+    startPos = [e.pageX, e.pageY];
+    liftStones();});
+window.addEventListener('touchstart', (e) => {
+    startPos = [e.touches[0].clientX, e.touches[0].clientY];
+    liftStones();});
+window.addEventListener('mouseup', (e) => {
+    window.removeEventListener('mousemove', liftStones); 
+    endPos = [e.pageX, e.pageY];
+    throwStones();});
+window.addEventListener('touchend', (e) => {
+    throwStones();});
+
+window.addEventListener('touchmove', (e) => {
+    endPos = [e.touches[0].clientX, e.touches[0].clientY];
+    liftStones();
+});
+
 
 function initScene() {
 
@@ -84,7 +102,8 @@ function initScene() {
 
     scene = new THREE.Scene();
 
-    camera = new THREE.PerspectiveCamera(45, 1, .1, 300)
+    
+    camera = new THREE.PerspectiveCamera(45, window.innerWidth / (window.innerHeight-(0.1 * window.innerHeight)), .1, 300)
     camera.position.set(0, 10, -2)
     camera.rotateOnAxis(new THREE.Vector3(1,0,0), 180.5)
 
@@ -184,10 +203,10 @@ function createEnvironment() {
 function createBoxGeometry() {
 
     let boxGeometry = new THREE.BoxGeometry(1, 0.2, 1, objectParams.segments, objectParams.segments, objectParams.segments);
-
     const positionAttr = boxGeometry.attributes.position;
     const subCubeHalfSize = .5 - objectParams.edgeRadius;
 
+    const uvAttr = boxGeometry.getAttribute('uv');
 
     for (let i = 0; i < positionAttr.count; i++) {
 
@@ -217,11 +236,24 @@ function createBoxGeometry() {
         }
         
         positionAttr.setXYZ(i, position.x, position.y, position.z);
+        // Set UV coordinates
+        // Set UV coordinates based on the face
+    if (position.y === subCubeHalfSize) { // Top face
+        uvAttr.setX(i * 2, topUVs[0].x, topUVs[0].y);
+        uvAttr.setY(i * 2 + 1, topUVs[1].x, topUVs[1].y);
+    } else if (position.y === -subCubeHalfSize) { // Bottom face
+        uvAttr.setX(i * 2, bottomUVs[0].x, bottomUVs[0].y);
+        uvAttr.setY(i * 2 + 1, bottomUVs[1].x, bottomUVs[1].y);
+    } else { // Side faces
+        // Modify UVs if needed for side faces
+    }
     }
 
-
-    boxGeometry.deleteAttribute('normal');
-    boxGeometry.deleteAttribute('uv');
+    // boxGeometry.deleteAttribute('normal');
+    // boxGeometry.deleteAttribute('uv');
+    // console.log(uv);
+    // boxGeometry.attributes.uv = uv;
+    //boxGeometry.attributes.uv.needsUpdate = true;
     boxGeometry = BufferGeometryUtils.mergeVertices(boxGeometry);
 
     boxGeometry.computeVertexNormals();
@@ -229,12 +261,28 @@ function createBoxGeometry() {
     return boxGeometry;
 }
 
+
 function createStoneMesh(stoneType) {
-    let color = getStoneColor(stoneType);
-    const boxMaterialOuter = new THREE.MeshStandardMaterial({
-        color,
+    let texture = getStoneTexture(stoneType);
+    const textureLoader = new THREE.TextureLoader();
+    const stoneTexture = textureLoader.load("./textures/stonetexture.png");
+    const textureMaterial = new THREE.MeshStandardMaterial({
+        map: texture,
+    });
+
+    const stoneMaterial = new THREE.MeshStandardMaterial({
+        map: stoneTexture
     })
-    const stoneMesh = new THREE.Mesh(createBoxGeometry(), boxMaterialOuter);
+
+    const materials = [
+        stoneMaterial, // Right side
+        stoneMaterial, // Left side
+        textureMaterial, // Top side
+        textureMaterial, // Bottom side
+        stoneMaterial, // Front side
+        stoneMaterial // Back side
+    ];
+    const stoneMesh = new THREE.Mesh(createBoxGeometry(), materials);
     stoneMesh.castShadow = true;
 
     return stoneMesh;
@@ -269,10 +317,30 @@ function generatePositions(numPositions, gridSize) {
     return positions;
 }
 
+function liftStones() {
+    let positions = generatePositions(Stones.length, 10);
+    physicsWorld.gravity = new CANNON.Vec3(0, 0, 0),
+    stoneArray.forEach((stone, sIDx) => {
+        let s = stone.object;
+
+        s.body.velocity.setZero();
+        s.body.angularVelocity.setZero();
+        s.body.position = new CANNON.Vec3(positions[sIDx][0], 0, positions[sIDx][1]);
+        s.mesh.position.copy(s.body.position);
+
+        s.mesh.rotation.set(0, Math.random(), 0)
+        s.body.quaternion.copy(s.mesh.quaternion);
+    });
+}
+
 function throwStones() {
-    scoreResult.innerHTML = '';
+    
+    let dirX = Math.abs(startPos[0] - endPos[0]) < 10 ? 0 :  (startPos[0] - endPos[0]) / window.innerWidth;
+    let dirY = Math.abs(startPos[1] - endPos[1]) < 10 ? 0 :  (startPos[1] - endPos[1]) /(window.innerHeight-(0.1 * window.innerHeight));
+console.log([dirX, dirY]);
     finishedStones = 0;
     let positions = generatePositions(Stones.length, 10);
+    physicsWorld.gravity = new CANNON.Vec3(0, -10, 0),
     stoneArray.forEach((stone, sIDx) => {
         let s = stone.object;
 
@@ -286,7 +354,7 @@ function throwStones() {
 
         const force = 3 + 1 * Math.random();
         s.body.applyImpulse(
-            new CANNON.Vec3(0, force, 0),
+            new CANNON.Vec3(-dirX*throwStrength, force, -dirY*throwStrength),
             new CANNON.Vec3(Math.random() * 0.05 -0.005,Math.random() * 0.05 -0.005,Math.random() * 0.05 - 0.005)
         );
 
@@ -309,27 +377,6 @@ function handleResults() {
     if(finishedStones < Stones.length) {
         return;
     }
-
-    MakeReading(StoneType.WellSpring, StoneType.Bend1, StoneType.Bend2);
-}
-
-function MakeReading(river1, river2, river3) {
-    let stone1 = stoneArray.filter(value => value.type == river1)[0];
-    let stone2 = stoneArray.filter(value => value.type == river2)[0];
-    let stone3 = stoneArray.filter(value => value.type == river3)[0];
-    drawRiver(stone1,stone2,stone3);
-    console.log("drawed");
-    let guideStone = stoneArray.filter(value => value.type == StoneType.Guide)[0];
-}
-
-
-// Render ///////////////////////////////////////////////////////////////////////////////////////////////////
-function drawRiver(riverStone1, riverStone2, riverStone3) {
-    const geometry = new THREE.CircleGeometry( 5, 32 ); 
-    const material = new THREE.MeshBasicMaterial( { color: 0xffff00 } ); 
-    const circle = new THREE.Mesh( geometry, material ); 
-    scene.add( circle );
-    renderer.render(scene, camera);
 }
 
 function render() {
@@ -345,7 +392,10 @@ function render() {
 }
 
 function updateSceneSize() {
+    let initialAspect = window.innerWidth / (window.innerHeight-(0.1 * window.innerHeight));
+    let [height, aspect] = initialAspect < 1? [window.innerWidth, 1] : [window.innerHeight-(0.1 * window.innerHeight), initialAspect];
+    camera.aspect = aspect;
     camera.updateProjectionMatrix();
-    let size = Math.min(window.innerHeight-(0.1 * window.innerHeight), window.innerWidth);
-    renderer.setSize(size, size);
+    renderer.setSize(window.innerWidth, height);
+    
 }
