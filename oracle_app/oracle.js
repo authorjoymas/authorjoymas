@@ -72,20 +72,14 @@ render();
 
 window.addEventListener('resize', updateSceneSize);
 window.addEventListener('mousedown', (e) => {
-    window.addEventListener('mousemove', (event) => {
-        endPos = [event.pageX, event.pageY];
-        wigglePositions();
-    }); 
+    window.addEventListener('mousemove', wiggleEvent); 
     startPos = [e.pageX, e.pageY];
     liftStones();});
 window.addEventListener('touchstart', (e) => {
     startPos = [e.touches[0].clientX, e.touches[0].clientY];
     liftStones();});
 window.addEventListener('mouseup', (e) => {
-    window.removeEventListener('mousemove', (event) => {
-        endPos = [event.pageX, event.pageY];
-        wigglePositions();
-    }); 
+    window.removeEventListener('mousemove', wiggleEvent); 
    
     throwStones();});
 window.addEventListener('touchend', (e) => {
@@ -95,6 +89,11 @@ window.addEventListener('touchmove', (e) => {
     endPos = [e.touches[0].clientX, e.touches[0].clientY];
     wigglePositions();
 });
+
+function wiggleEvent(e) {
+    endPos = [e.pageX, e.pageY];
+    wigglePositions();
+}
 
 
 function initScene() {
