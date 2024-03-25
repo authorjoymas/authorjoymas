@@ -62,6 +62,7 @@ function getStoneTexture(stoneType) {
 // Initialisation////////////////////////////////////////////////////////////////////////////////////////
 let startPos = [0,0]
 let endPos = [0,0];
+let tempPosition;
 initPhysics();
 initScene();
 if(debug) initDebugger();
@@ -71,22 +72,25 @@ render();
 
 window.addEventListener('resize', updateSceneSize);
 window.addEventListener('mousedown', (e) => {
-    window.addEventListener('mousemove',liftStones); 
+    window.addEventListener('mousemove', (event) => {
+        endPos = [event.pageX, event.pageY];
+        wigglePositions();
+    }); 
     startPos = [e.pageX, e.pageY];
     liftStones();});
 window.addEventListener('touchstart', (e) => {
     startPos = [e.touches[0].clientX, e.touches[0].clientY];
     liftStones();});
 window.addEventListener('mouseup', (e) => {
-    window.removeEventListener('mousemove', liftStones); 
-    endPos = [e.pageX, e.pageY];
+    window.removeEventListener('mousemove'); 
+   
     throwStones();});
 window.addEventListener('touchend', (e) => {
     throwStones();});
 
 window.addEventListener('touchmove', (e) => {
     endPos = [e.touches[0].clientX, e.touches[0].clientY];
-    liftStones();
+    wigglePositions();
 });
 
 
@@ -111,7 +115,7 @@ function initScene() {
 
     const ambientLight = new THREE.AmbientLight(0xffffff, .5);
     scene.add(ambientLight);
-    const topLight = new THREE.PointLight(0xffffff, .5);
+    const topLight = new THREE.PointLight(0xffffff, 600);
     topLight.position.set(10, 15, 0);
     topLight.castShadow = true;
     topLight.shadow.mapSize.width = 2048;
@@ -266,11 +270,11 @@ function createStoneMesh(stoneType) {
     let texture = getStoneTexture(stoneType);
     const textureLoader = new THREE.TextureLoader();
     const stoneTexture = textureLoader.load("./textures/stonetexture.png");
-    const textureMaterial = new THREE.MeshStandardMaterial({
+    const textureMaterial = new THREE.MeshLambertMaterial({
         map: texture,
     });
 
-    const stoneMaterial = new THREE.MeshStandardMaterial({
+    const stoneMaterial = new THREE.MeshLambertMaterial({
         map: stoneTexture
     })
 
@@ -317,8 +321,23 @@ function generatePositions(numPositions, gridSize) {
     return positions;
 }
 
+function wigglePositions() {
+    let dirX = Math.abs(startPos[0] - endPos[0]) < 10 ? 0 :  (startPos[0] - endPos[0]) / window.innerWidth;
+    let dirY = Math.abs(startPos[1] - endPos[1]) < 10 ? 0 :  (startPos[1] - endPos[1]) /(window.innerHeight-(0.1 * window.innerHeight));
+  
+    stoneArray.forEach((stone, sIDx) => {
+        let s = stone.object;
+
+        s.body.velocity.setZero();
+        s.body.angularVelocity.setZero();
+        s.body.position = new CANNON.Vec3(tempPosition[sIDx][0]-dirX, 0, tempPosition[sIDx][1]-dirY);
+        s.mesh.position.copy(s.body.position);
+    });
+}
+
 function liftStones() {
     let positions = generatePositions(Stones.length, 10);
+    tempPosition = positions;
     physicsWorld.gravity = new CANNON.Vec3(0, 0, 0),
     stoneArray.forEach((stone, sIDx) => {
         let s = stone.object;
@@ -337,7 +356,6 @@ function throwStones() {
     
     let dirX = Math.abs(startPos[0] - endPos[0]) < 10 ? 0 :  (startPos[0] - endPos[0]) / window.innerWidth;
     let dirY = Math.abs(startPos[1] - endPos[1]) < 10 ? 0 :  (startPos[1] - endPos[1]) /(window.innerHeight-(0.1 * window.innerHeight));
-console.log([dirX, dirY]);
     finishedStones = 0;
     let positions = generatePositions(Stones.length, 10);
     physicsWorld.gravity = new CANNON.Vec3(0, -10, 0),
