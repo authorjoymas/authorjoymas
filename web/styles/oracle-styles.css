@@ -6,8 +6,8 @@ article {
 
 
 
-  .oracle-scene {
-    width: fit-content;
-    justify-content: center;
-    background: url(/web/styles/sand.png); 
-  }
+.oracle-scene {
+  width: fit-content;
+  justify-content: center;
+  background: url(/web/styles/sand.png); 
+}

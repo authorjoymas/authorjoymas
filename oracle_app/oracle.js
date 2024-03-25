@@ -7,7 +7,7 @@ import * as BufferGeometryUtils from 'three/addons/utils/BufferGeometryUtils.js'
 const canvasEl = document.querySelector('#canvas');
 
 // Parameters ///////////////////////////////////////////////////////////////////////////////////////////////
-let debug = true;
+let debug = false;
 let renderer, scene, camera, physicsWorld, cannonDebugger;
 let throwStrength = 2;
 const objectParams = {
