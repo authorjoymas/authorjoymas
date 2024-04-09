@@ -12,4 +12,6 @@
 
 [Game Rules](/gamerules.html)
 
+---
 
+<a href="/kopheri_game/Kopheri.html" target="_blank">Play</a>

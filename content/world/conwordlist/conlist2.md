@@ -1,0 +1,1 @@
+The _tuu lië-ma_ style of poetry dictates that all the words of the poem, except one, are drawn from a strict wordlist, called the "garden" or the "court".  One such list, made famous in the court of Clouded City, is listed below:

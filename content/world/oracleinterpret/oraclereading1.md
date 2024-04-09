@@ -1,3 +1,7 @@
+[Use the Oracle](/oracle_app/oracle_app.html)
+
+---
+
 [Introduction](/oracle.html)
 
 ---
@@ -15,4 +19,5 @@
 ---
 
 [Quick Reference Guide](/oraclequickguide.html)
+
 

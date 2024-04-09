@@ -1,20 +1,15 @@
 
-![OracleCharacter](/oracle.html)(/content/media/world/oraclechar.png)
+![OracleCharacter|40](/oracle.html)(/content/media/world/oraclechar.png)
 
 [The Oracle](/oracle.html)
 
 ---
-![GamesCharacter](/games.html)(/content/media/world/gameschar.png)
+![GamesCharacter|40](/games.html)(/content/media/world/gameschar.png)
 
 [Traditional Games](/games.html)
 
 ---
-<br/>
-<br/>
-<br/>
 
-![DocsCharacter](/condocs.html)(/content/media/world/docschars.png)
+![DocsCharacter|40](/condocs.html)(/content/media/world/docschars.png)
 
-[Documents](/condocs.html)
-
-Work in progress
+[Traditional Poetry](/condocs.html)
