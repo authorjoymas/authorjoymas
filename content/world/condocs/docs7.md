@@ -1,6 +1,6 @@
 Seasons pass, seasons pass
 
-Leaves fall, <span style='color: #d7d5dfff;'>bend</span>eyes</span> new
+Leaves fall, <span style='color: #d7d5dfff;'>eyes</span> new
 
 Always path ahead
 
@@ -8,7 +8,7 @@ Always path ahead
 
 _Mei-ye ba-na, mei-ye ba-na_
 
-_Ao-ye tuu-na, <span style='color: #d7d5dfff;'>bend</span>phoïn</span> yaon ye_
+_Ao-ye tuu-na, <span style='color: #d7d5dfff;'>phoïn</span> yaon ye_
 
 _Daphe khaï ye iyaï_
 
