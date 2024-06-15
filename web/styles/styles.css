@@ -166,7 +166,35 @@ header {
     background-color: transparent;
 }
 
+/* Tables */
 
+.table, th {
+    border-collapse: collapse;
+    padding: 15px;
+    text-align: left;
+    background-color: #595a5a;
+    font-weight: bold;
+    font-size: 1.2em;
+    width: 50%;
+    table-layout: fixed;
+}
+
+.table, td {
+    border-collapse: collapse;
+    padding: 15px;
+    text-align: left;
+    background-color: #30333a;
+    font-size: 1.2em;
+    width: 50%;
+}
+
+/* Bullet Points */
+
+.ul.a li {
+    font-size: 1.5em;
+    text-align: left;
+    color: #f8edd9;
+}
 
 /* Markdown Container Styles */
 .row {
@@ -204,6 +232,7 @@ header {
     .few-row .column {
         width: 90%;
     }
+    .row {margin-bottom: 5px;}
 }
 
 @media (max-width: 968px) {
