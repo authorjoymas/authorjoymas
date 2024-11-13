@@ -4,9 +4,9 @@
 
 **Face resistance**
 
-After you've rolled and rerolled to complete combat, the targeted unit can roll and reroll to put up resistance.  The unit can pick any relevant characteristic as its focus characteristic. On a resistance roll, you cannot force success.
+After you've rolled and rerolled to complete combat, the targeted unit can roll and reroll to put up resistance.  The unit can pick any relevant characteristic as its focus characteristic. If the unit rolls more successes than your unit, your attack will fail.
 
-If a resistance roll has more successes than the challenge roll, any deadly strike turns into an ordinary strike.
+**Force success**
 
-If a unit's Weakness is the target of a deadly strike, the unit cannot make a resistance roll.
+Just as with other challenges, you can pay Integrity to buy more successes, or ask the GM to give your unit a weakness if you want to overcome the opposing unit's resistance.
 

@@ -6,6 +6,7 @@ Each challenge is faced in roughly the same way:
 <li>  making a plan </li>
 <li> selecting a focus characteristic </li>
 <li> rolling and rerolling a dice pool of your unit's Integrity plus 4 and checking for successes </li>
+<li> checking for resistance </li>
 <li> paying Integrity or gaining a Weakness if you want to force success </li>
 </ul>
 

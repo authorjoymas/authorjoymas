@@ -8,22 +8,18 @@ Your successes allow you to further customise the unit.  Each success allows you
 
 
 <ul style="font-size:1.5em; text-align:left; margin-left:4em; color:#F9D695;"; >
-<li>changing a characteristic</li>
-
-<li>changing a Motivation</li>
-
-<li>changing a Weakness</li>
+<li>adding a characteristic</li>
 
 <li>adding a point of Integrity</li>
 </ul>
 
-This will make your detached unit differ more from the main unit.
+
 
 
 
 **Force success**
 
-If you didn't get what you want and you don't have enough successes to change it, you can spend the Integrity of the detached unit to pay for a change.
+If you didn't get what you want and you don't have enough successes to change it, you can spend the Integrity of the main unit to pay for a change.
 
 Alternatively, you can ask the GM to add an additional Weakness to your unit in exchange for making an extra change.
 

@@ -7,8 +7,8 @@ Like other types of challenges, an innovation task includes:
 <ul style="font-size:1.5em; text-align:left; margin-left:4em; color:#F9D695;"; >
 <li> making a plan </li>
 <li> selecting a focus characteristic </li>
-<li> rolling a dice pool of your unit's Integrity plus 4 and checking for successes </li>
-<li> rerolling the lower numbered dice </li>
+<li> rolling and rerolling a dice pool of your unit's Integrity plus 4 and checking for successes </li>
+<li> checking for resistance </li>
 <li> paying Integrity or gaining a Weakness if you want to force success </li>
 <li> resolving the successes </li>
 </ul>

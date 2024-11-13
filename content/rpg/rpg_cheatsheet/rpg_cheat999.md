@@ -14,14 +14,14 @@
           </tr>
   <tr>
     <td style="font-weight: bold;";>Detachment, Attachment, Crafting</td>
-    <td>Choose what sort of unit you are detaching from the main unit, its size, and its Motivation</td>
+    <td>Choose what sort of unit you are detaching from the main unit and its size</td>
     <td>Pick a characteristic as the basis of your roll</td>
-    <td>Copy the focus characteristic and all lower characteristics to the new unit, and gain Integrity equal to the focus characteristic score</td>
-    <td>Roll a dice pool equal to your Integrity plus 4</td>
+    <td>Copy the focus characteristic as the title or top characteristic of your unit, and gain Integrity equal to the focus characteristic score</td>
+    <td>Roll a dice pool equal to the main unit's Integrity plus 4</td>
     <td>Re-roll any numbers below your focus characteristic</td>
     <td>Count how many dice show the face value of your focus characteristic</td>
     <td>Buy any extra successes by paying 1 Integrity per success, or adding a new Weakness per success</td>
-    <td>Make a change or add 1 Integrity to your newly detached unit for each success you rolled</td>
+    <td>Add a chacteristic or add 1 Integrity to your newly detached unit for each success</td>
           </tr>
 </table>
 

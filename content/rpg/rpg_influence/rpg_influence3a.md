@@ -1,25 +1,23 @@
-**Meeting resistance**
+ 
+  **Forcing success**
 
-If you try to influence a unit - or if a unit tries to influence you - the target unit can roll resistance.
+If you have enough successes to overcome their resistance, you convince the opposing unit to act as you have described in your plan.
 
-Resistance functions much like any other roll - pick a focus characteristic that you think would help you resist the challenge against you, and roll and reroll to see how many successes you can achieve.  If the challenging unit did not appeal to the Motivation of the target unit, the target unit can treat their Motivation as their first characteristic, and roll for 6s.  For example, if your Motivation is _desire for wealth_ and the unit trying to influence you does not make an argument that appeals to your desire for wealth, then you can roll for resistance where 6s are successes.  This allows you one reroll of every other dice.
+If you don't have enough successes, you will not have convinced them.  You can still try to force success by:
 
-Unlike a challenge roll, with a resistence roll you cannot force success.
+<ul style="font-size:1.5em; text-align:left; margin-left:4em; color:#F9D695;"; >
 
-If the number of successes is greater than the number of successes that the challenging unit had, you resist the influence.
+<li>paying 1 Integrity for each extra success required</li>
 
-<table>
-  <tr>
-    <th>(!) Resistance</th>
-      </tr>
-    <tr>
-    <td>Pick a focus characteristic that could resist the challenge, and roll to resist.</td>
-    </tr>
-  <tr>
-    <td>Your Motivation can count as a 6-rated focus characteristic if the argument didn't appeal to it.</td>
-    </tr>
-  <tr>
-    <td>If your roll more successes than your challenger, the influence fails.</td>
-    </tr>
-  
-  </table>
+<li>getting the GM to give you an extra Weakness for each success required</li>
+</ul>
+
+---
+
+**Getting your way**
+
+If you are successful, the unit will follow your commands or suggestions.  There are two ways to do this:
+
+First, the GM can control the character, and ensure that they follow your appeals.
+
+Second, you can instead opt to control the unit themselves.  For each success, place 1 of your Integrity tokens on the other unit's index card.  When you want to control the other unit, you may spend 1 of the Integrity placed there to control it for a turn.  If it needs to complete a task or engage in combat, it will use its own Integrity.  If your Integrity on this unit is depleted, it is no longer under your control.

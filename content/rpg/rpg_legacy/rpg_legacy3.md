@@ -3,7 +3,7 @@
 
 **Index card**
 
-Each unit in your faction is going to have its own index card (or dedicated space on a piece of paper).  Similar to your culture card, your legacy unit is going to have a title, a Motivation, and up to six characteristics.  However, while your culture card applies to _all_ the units in your faction, the Motivation and characteristics of a unit only applies to _itself_.  
+Each unit in your faction is going to have its own index card (or dedicated space on a piece of paper).  Similar to your culture card, your legacy unit is going to have a title, and up to six characteristics.  However, while your culture card applies to _all_ the units in your faction, the characteristics of a unit only apply to _itself_.  
 
 (Okay, this is not _quite_ true - see [Attachments and Detachments](/rpg_detach.html) for more on this later.)
 

@@ -4,7 +4,7 @@
 
 **Individual characters**
 
-You can play _All the Rivers and Mountains_ as an individual character rather than a faction - both in a game focused solely on individuals, or in a game where other players might control massive armies and cities.  You can be Aragorn or Gandalf while other playres control Rohan or Gondor.
+You can play _All the Rivers and Mountains_ as an individual character rather than a faction - both in a game focused solely on individuals, or in a game where other players might control massive armies and cities.  You can be like Aragorn or Gandalf while other players control factions as large as Rohan or Gondor.
 
 To do so, you might want to flesh out a variety of fixed attachments, such as weapons, spells, fighting styles, histories, equipment, moral principles, books of knowledge, and more.  Attachments are the way to make your character detailed and versatile, ready to face any challenges.
 

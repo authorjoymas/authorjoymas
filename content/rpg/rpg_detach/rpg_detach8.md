@@ -5,9 +5,9 @@
 
 **Complete the detachment**
 
-The detachment is almost complete - now you should have an index card with a title, a size, a Motivation, a Weakness, six characteristics and some Integrity.  It is a fully-fledged unit ready to go out into the world and explore, influence, fight, and make detachments of its own.
+The detachment is almost complete - now you should have an index card with a title, a size, up to six characteristics and some Integrity.  It is a fully-fledged unit ready to go out into the world and explore, influence, fight, and make detachments of its own.
 
-The last thing to check for before your detachment is complete is to see if the Integrity of your detached unit is greater than the Integrity of your main unit.  If it is, for any reason, then the main unit should have had its Integrity reduced by 1.  This represents expertise, power or influence leaving the main unit.
+When making history, you can detach multiple units from your main unit, and you can also detach new units from the units that you've just made, and detach new units from those units, and so on.  Starting with your legacy unit you can grow your faction in any direction you choose and flesh out what sort of units live within it.
 
 <table>
   <tr>

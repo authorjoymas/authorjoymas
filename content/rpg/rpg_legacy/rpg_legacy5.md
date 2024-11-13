@@ -4,7 +4,7 @@ Integrity is the only "stat" in _All the Rivers and Mountains_, and it does a lo
 
 Integrity also represents the capabilities of your unit - the amount of Integrity that a unit has dictates the size of the dice pool that you will use to resolve challenges.  Your dice pool will be your Integrity plus 4, so an Integrity of 3 will give you a dice pool of 7.
 
-Integrity can be depleted by going against your unit's or culture's Motivation, playing into your Weaknesses, being demoralised by other units, being injured by other units, or paying a cost to overcome challenges.  Integrity can be refreshed by giving your unit new members from another unit (such as replenishing an army from a city or gaining new merchants from a guild).
+Integrity can be depleted by going against your culture's Motivation, playing into your Weaknesses, being demoralised by other units, being injured by other units, or paying a cost to overcome challenges.  Integrity can be refreshed by giving your unit new members from another unit (such as replenishing an army from a city or gaining new merchants from a guild).
 
 <table>
   <tr>

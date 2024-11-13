@@ -1,6 +1,6 @@
 **Characteristics**
 
-Now your index card representing your culture should have a title, a Motivation, an Aspect and a Weakness.  Next, you will need to add up tp six characteristics.  Characteristics are words or very short phrases that either describe part of the composition of a unit or a quality of the unit. (For a culture card, we will only need to include words and phrases that describe the quality of the unit.)  Characteristics can be free-form, so you can be as creative as you like.
+Now your index card representing your culture should have a title, a Motivation, and a Weakness.  Next, you will need to add up tp six characteristics.  Characteristics are words or very short phrases that either describe part of the composition of a unit or a quality of the unit. (For a culture card, we will only need to include words and phrases that describe the quality of the unit.)  Characteristics can be free-form, so you can be as creative as you like.
 
 Number your characteristics starting from 6 at the top.
 

@@ -5,12 +5,11 @@ Combat is similar, but not identical, to other challenges:
 <ul style="font-size:1.5em; text-align:left; margin-left:4em; color:#F9D695;"; >
 <li>  making a plan </li>
 <li> selecting a focus characteristic </li>
-<li> rolling a dice pool of your unit's Integrity plus 4 and checking for successes </li>
-<li> rerolling the lower numbered dice </li>
+<li> rolling and rerolling a dice pool of your unit's Integrity plus 4 and checking for successes </li>
+<li> checking for resistance</li>
 <li> dealing damage to your enemy </li>
 </ul>
 
-Making a plan in combat involves some very simple, but specific steps.  Once combat is in motion you won't be able to change your plan, so making a plan can be a little like making a gamble.  Note that unlike other challenges, you cannot pick a new focus characteristic on a bad roll or pay your way to success.
 
 ---
 

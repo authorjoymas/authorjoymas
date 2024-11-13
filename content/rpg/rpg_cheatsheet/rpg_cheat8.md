@@ -25,7 +25,7 @@
     <td>Re-roll any numbers below your focus characteristic</td>
     <td>Count how many dice show the face value of your focus characteristic</td>
     <td>Buy any extra successes by paying 1 Integrity per success, or adding a new Weakness per success</td>
-    <td>the target unit can use a characteristic to roll for resistance - if they have more successes than the challenging unit the challenge fails</td>
+    <td>The target unit can use a characteristic to roll for resistance - if they have more successes than the challenging unit the challenge fails</td>
     <td>If successful, apply the effects to the target</td>
       </tr>
 </table>

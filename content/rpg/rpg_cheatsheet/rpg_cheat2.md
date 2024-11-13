@@ -18,10 +18,6 @@
       <td>a common vulnerability of the faction</td>
         </tr>
     <tr>
-      <td>Aspect</td>
-      <td>a special ability of the faction</td>
-        </tr>
-    <tr>
       <td>Characteristics</td>
       <td>general characteristics of the faction, used to roll for challenges</td>
         </tr>
@@ -56,10 +52,6 @@
     <td>Integrity</td>
       <td>a number that represents the health, morale and affects the dice pool size of your unit</td>
         <tr>
-      <td>Motivation</td>
-      <td>what desire, loyalty, love or goals the unit has</td>
-        </tr>
-    <tr>
       <td>Characteristics</td>
       <td>general characteristics of the unit, used to roll for challenges</td>
         </tr>
