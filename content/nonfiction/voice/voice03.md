@@ -1,0 +1,3 @@
+### The Voice to Parliament
+
+In 2023 Australia held a referendum to determine whether to amend the Constitution to include a Voice to Parliament which would represent First Nations peoples.  At the time, there was a lot of information and misinformation going about, and so I wrote the following to express my thoughts and hopefully bring some clarity for the few in my circle who would read them and wanted more information.

@@ -2,5 +2,6 @@ world: #333a4d
 about: #30333a
 fiction: #4d3b33
 rpg: #3b443c
+nonfiction: #2e3a3c
 oracle: #333a4d
 

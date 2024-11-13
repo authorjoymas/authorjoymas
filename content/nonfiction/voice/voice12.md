@@ -1,0 +1,14 @@
+### Treaty and Truth-telling - Oct 9, 2023
+
+There's a persistent idea going around that the advocates of the Voice are being deceptive and using it to sneak in a Treaty that will disadvantage Australians, cost them money in reparations, take land from people, or even make a separate country.
+
+There's a lot to unpack here.  I actually think this is a bit of a conspiracy theory where people have taken some true things and then misrepresented them to make them sound scarier.  I'll try to explain why I think this.
+
+First, "Treaty" is the term used for agreements made between original inhabitants and colonial governments.  Prime Minister Turnbull and opposition leader Shorten agreed in 2015 to have a Referendum Council engage in extensive deliberations with First Nations peoples - the result included a one-page Uluru Statement from the Heart in which First Nations peoples endorsed three things: the Voice to Parliament, truth-telling, and Treaty.  The current Prime Minister Albanese has agreed to pursue all three of these goals, and many Yes and No supporters of the Voice are supportive of Treaty.
+
+While the Voice will be able to talk about Treaty, it won't have any power to start or make a Treaty, and it will have other important issues to talk about as well.  Evan if there is no Voice, there will still be a desire to pursue Treaty, as prominent supporters of both Yes and No support the idea.
+
+So I don't think the Yes campaign is being deceptive here: the call for Treaty has been very public instead of very secretive, the Voice doesn't have the power to make a Treaty, and Treaty will likely be pursued whether the Voice is established or not, as both Yes and No campaigners have said.
+
+I've heard a lot of people worry that a Treaty will have negative consequences for Australians who aren't First Nations peoples.  A Treaty is an agreement between two groups - representatives of First Nations peoples and the Australian government - and each group is going to protect their interests and avoid disadvantaging their people.  So the Australian government is very unlikely to agree to a Treaty that goes against the interests of Australians or requires it to do something unpopular with voters.  Both major parties have promised to lower taxes, and both have policies that favour property ownership, so I don't think Australians have to worry about losing anything in a Treaty.
+This referendum is about the Voice, not Treaty, but it is worthwhile learning about Treaty because regardless how the Voice goes, there will be more talk about it in the future, and it's best to be informed, because it's not a frightening prospect like some would have you believe.

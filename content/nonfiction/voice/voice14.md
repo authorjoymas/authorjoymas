@@ -1,0 +1,13 @@
+### The state of discourse - Oct 13, 2023
+
+As a political scientist it is a bit sad, and not entirely unpredictable, to see a beneficial piece of democratic institutional design do poorly in polling.
+
+There are possibly a few reasons why.  There's the obvious ones that people might not agree with the majority of political scientists and Constitutional scholars that it's going to be beneficial, or perhaps that people don't understand what those benefits are or how it could be a consistent part of democracy.
+But there's some other likely common reasons - perhaps even more common.
+
+One of them is the cost of living crisis.  Polls show that it is a major factor in people's decision making, and there's a lot of evidence that this happens a lot - economic difficulty is correlated with Trump's success and Brexit's success.  People don't like to vote to help other people when they're feeling the pinch themselves.  And it makes some sense, but voting down the Voice won't actually improve anyone's cost of living.
+
+Another is a lack of bipartisan support.  Almost no referendum has passed without bipartisan support.  Leadership is important in setting an example, and when the discourse from one of the leaders at the top is "us versus them", it's going to foster division.  This is pretty ironic given that the Voice is part of a peaceful coming together. It's especially strange, given that the Liberal National Coalition began the process that led to the Uluru Statement, that they are now the ones rejecting its recommendations.
+The last one is racism.  We might not want to think so, but racism didn't disappear when the 1967 referendum happened, when the White Australia Policy ended, when the Cronulla riots were over, or when terra nullius was overturned, just like sexism didn't disappear when women got the vote or achieved representation in Parliament.  Racism is still lurking everywhere, and any arguments that First Nations peoples are trying to take our land, are the cause of all their own troubles, gained a net benefit from colonisation, or just want to corruptly disburse taxpayers money to their own are actually arguments rooted in racism.  First Nations peoples were targeted, subjugated, persecuted, excluded, and victims of genocide, and the impacts of those things didn't disappear overnight when we changed a law or improved a policy.  One of the very first No campaign events compared the Voice to Apartheid!
+
+So I hope the Voice gets up.  We're not demographics - we're individual moral agents and we make our own decisions, and we can buck any trends that history offers us.
